@@ -1,0 +1,45 @@
+.treadmark-area{
+    width: 100%;
+    position: relative;
+    background: url(../img/work.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &:after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #383933bf;
+        top: 0;
+        left: 0;
+    }
+    .treadmark-content{
+        max-width: 55rem;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        padding: 3rem 0;
+        h2{
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: var(--color1);
+        }
+        .border{
+            width: 30%;
+        }
+        h3{
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--color1);
+        }
+    }
+}
+
+.treadmark-content .swiper-pagination-bullet {
+	border-radius: 0%; ;
+}
+.treadmark-content .swiper-pagination-bullet-active {
+	background: var(--color3);
+}

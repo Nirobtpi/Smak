@@ -1,0 +1,217 @@
+@media all and (max-width:1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .gallery-area .imges {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media all and (max-width:991px) {
+    .header-area .top-header {
+        padding: 1rem 5rem;
+    }
+
+    .header-area .top-header .mobile-menu {
+        display: block;
+    }
+
+    .header-area {
+        .top-header {
+            position: relative;
+            nav {
+                position: absolute;
+                top: 7rem;
+                left: -50rem;
+                z-index: 999;
+                width: 50%;
+                height: 100vh;
+                background: var(--color2);
+                transition: 0.5s all cubic-bezier(.13,.76,.87,.58);
+                ul{
+                    flex-direction: column;
+
+                    li{
+                        padding: 3rem 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .doit-area .doit-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .doit-area .doit-items .single-item {
+        margin-bottom: 3rem;
+    }
+
+    .works-area .works .single-work {
+        flex-basis: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .works-area .works .single-work p {
+        max-width: 100%;
+    }
+
+    .number-area .number-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-area .team-members {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-area .team-members .single-member .img .sc-icon {
+        left: -10.5rem;
+    }
+
+    .team-area .team-members .single-member .img .sc-icon ul {
+        margin-top: 12rem;
+    }
+
+    .team-area .team-members .single-member:hover .img img {
+        margin-left: 3rem;
+    }
+
+    .company .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: 43%;
+    }
+}
+
+@media all and (max-width:767px) {
+    .hero-area .banner {
+        padding: 6rem 1rem;
+    }
+
+    .hero-area .banner h1 {
+        font-size: 5rem;
+    }
+
+    .services-area .our-services {
+        flex-wrap: wrap;
+    }
+
+    .services-area .our-services .service-icon {
+        flex-basis: 49%;
+        margin-bottom: 3rem;
+    }
+
+    .works-area .work-nav ul li {
+        padding: 1rem 2rem;
+    }
+
+    .gallery-area .imges {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-area .support-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skill-area .skilles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-area .skilles .single-skill {
+        margin-bottom: 3rem;
+    }
+
+    .message-area .contact-form .half {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .doit-area .doit-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallery-area .imges {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // .team-area .team-members {
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+
+    .team-area .team-members .single-member .img .sc-icon {
+        left: -17.5rem;
+    }
+
+    .team-area .team-members .single-member .img .sc-icon ul {
+        margin-top: 7rem;
+    }
+
+    .company .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: -55%;
+    }
+
+    .contact-area .contact-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-area .contact-items .single-item {
+        margin-bottom: 3rem;
+    }
+}
+
+@media all and (max-width:575px) {
+    .works-area .works .single-work {
+        text-align: center;
+    }
+
+    .services-area .our-services .service-icon {
+        flex-basis: 100%;
+    }
+
+    .number-area .number-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skill-area .skilles {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-area .team-members {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-area .team-members .single-member .img .sc-icon {
+        width: 20%;
+    }
+
+    .team-area .team-members .single-member .img .sc-icon ul {
+        margin-top: 25rem;
+    }
+}
+
+@media all and (max-width:480px) {
+    .hero-area .banner h1 {
+        font-size: 4rem;
+    }
+
+    .gallery-area .imges {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    .skill-area .skilles {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .company .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: -59%;
+    }
+}
+
+@media all and (max-width:449px) {
+    .team-area .team-members .single-member .img .sc-icon ul {
+        margin-top: 8rem;
+    }
+}

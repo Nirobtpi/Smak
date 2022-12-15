@@ -1,0 +1,103 @@
+.team-area {
+    width: 100%;
+    background: #fbfbfb;
+    position: relative;
+
+    .team-heading {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-weight: 300;
+        }
+    }
+
+    .team-members {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem;
+
+        .single-member {
+            border-bottom: 0.4rem solid rgb(223, 228, 229);
+
+            .img {
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.5s all ease;
+                }
+
+                .sc-icon {
+                    position: absolute;
+                    top: 0;
+                    left: -6.5rem;
+                    width: 25%;
+                    height: 100%;
+                    background-color: var(--color3);
+                    transition: 0.5s all ease;
+
+                    ul {
+                        margin-top: 7rem;
+
+                        li {
+                            padding: 1rem 0;
+
+                            a {
+                                display: block;
+
+                                i {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: var(--color1);
+                                    font-size: 2.5rem;
+                                    transition: 0.5s all ease;
+
+                                    &:hover {
+                                        color: var(--color2);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .member-content {
+                text-align: center;
+                padding: 1rem 0;
+
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    color: var(--color3);
+                    margin-bottom: 0.5rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                }
+            }
+
+            &:hover .img .sc-icon {
+                left: 0;
+            }
+
+            &:hover .img img {
+                margin-left: 5rem;
+            }
+        }
+
+    }
+}
